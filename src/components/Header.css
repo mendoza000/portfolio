@@ -46,5 +46,6 @@
 .header_pointEffect{
 	width: 1rem;
 	height: 1rem;
-	background-color: var(--color-secondary);
+	background-color: var(--color-primary);
+	position: absolute;
 }

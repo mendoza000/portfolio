@@ -15,6 +15,7 @@ const Header = () => {
 	const thirdPoint = useRef()
 	const fourthPoint = useRef()
 	const fifthPoint = useRef()
+	const sixthPoint = useRef()
 
 	const animateHeader = () => {
 
@@ -28,76 +29,113 @@ const Header = () => {
     })
 
     gsap.from(firstPoint.current, {
-    	y: -window.innerHeight,
-    	rotate: 0
+    	opacity: 0,
+    	delay: 2,
     })
     gsap.to(firstPoint.current, {
-    	duration: 8,
-    	y: window.innerHeight + 50,
-    	repeat:-1,
-    	ease: 'linear',
-    	rotate: 360,
+    	delay: 2.5,
+    	x: 100,
+    	y: 100,
+    	duration: 2
     })
-
+    gsap.to(firstPoint.current, {
+    	rotate: 160,
+    	duration: 2,
+    	delay: 2.5,
+    	repeat: -1,
+    	ease: 'linear'
+    })
+    
     gsap.from(secondPoint.current, {
-    	y: -window.innerHeight,
-    	rotate: 0,
-    	x: 50
+    	opacity: 0,
+    	delay: 2,
     })
     gsap.to(secondPoint.current, {
-    	duration: 7,
-    	y: window.innerHeight + 50,
-    	repeat:-1,
-    	ease: 'linear',
-    	rotate: 360,
-    	x: 50,
-    	yoyo: true
+    	delay: 2.5,
+    	x: -100,
+    	y: 163,
+    	duration: 2
+    })
+    gsap.to(secondPoint.current, {
+    	rotate: 160,
+    	duration: 2,
+    	delay: 2.5,
+    	repeat: -1,
+    	ease: 'linear'
     })
 
     gsap.from(thirdPoint.current, {
-    	y: -window.innerHeight,
-    	rotate: 0,
-    	x: -200
+    	opacity: 0,
+    	delay: 2,
     })
     gsap.to(thirdPoint.current, {
-    	duration: 9,
-    	y: window.innerHeight,
-    	repeat:-1,
-    	ease: 'linear',
-    	rotate: 360,
-    	x: 200,
-    	yoyo: true
+    	delay: 2.5,
+    	x: -110,
+    	y: -180,
+    	duration: 2
+    })
+    gsap.to(thirdPoint.current, {
+    	rotate: 160,
+    	duration: 2,
+    	delay: 2.5,
+    	repeat: -1,
+    	ease: 'linear'
     })
 
     gsap.from(fourthPoint.current, {
-    	y: window.innerHeight,
-    	rotate: 0,
-    	x: -150
+    	opacity: 0,
+    	delay: 2,
     })
     gsap.to(fourthPoint.current, {
-    	duration: 7,
-    	y: -window.innerHeight,
-    	repeat:-1,
-    	ease: 'linear',
-    	rotate: 360,
-    	x: 200,
-    	yoyo: true
+    	delay: 2.5,
+    	x: 70,
+    	y: -100,
+    	duration: 2
+    })
+    gsap.to(fourthPoint.current, {
+    	rotate: 160,
+    	duration: 2,
+    	delay: 2.5,
+    	repeat: -1,
+    	ease: 'linear'
     })
 
     gsap.from(fifthPoint.current, {
-    	y: -200,
-    	rotate: 0,
-    	x: -window.innerWidth
+    	opacity: 0,
+    	delay: 2,
     })
     gsap.to(fifthPoint.current, {
-    	duration: 8,
-    	y: 100,
-    	repeat:-1,
-    	ease: 'linear',
-    	rotate: 360,
-    	x: 200,
-    	yoyo: true,
+    	delay: 2.5,
+    	x: 120,
+    	y: -230,
+    	duration: 2
     })
+    gsap.to(fifthPoint.current, {
+    	rotate: 160,
+    	duration: 2,
+    	delay: 2.5,
+    	repeat: -1,
+    	ease: 'linear'
+    })
+
+    gsap.from(sixthPoint.current, {
+    	opacity: 0,
+    	delay: 2,
+    })
+    gsap.to(sixthPoint.current, {
+    	delay: 2.5,
+    	x: 40,
+    	y: 220,
+    	duration: 2
+    })
+    gsap.to(sixthPoint.current, {
+    	rotate: 160,
+    	duration: 2,
+    	delay: 2.5,
+    	repeat: -1,
+    	ease: 'linear'
+    })
+
 	}
 
 	useEffect(() => {
@@ -142,6 +180,7 @@ const Header = () => {
 			<div className="header_pointEffect" ref={thirdPoint}></div>
 			<div className="header_pointEffect" ref={fourthPoint}></div>
 			<div className="header_pointEffect" ref={fifthPoint}></div>
+			<div className="header_pointEffect" ref={sixthPoint}></div>
 		</header>
 	)
 
