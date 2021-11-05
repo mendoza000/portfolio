@@ -25,6 +25,7 @@ html, body{
   background-color: var(--color-bg-l);
   color: var(--color-bg-o);
   font-family: var(--font-text);
+  overflow-x: hidden;
 }
 body{
   font-size: 1.6rem;
@@ -34,3 +35,6 @@ body{
   padding: 0;
 }
 
+#root{
+  overflow-x: hidden;
+}
