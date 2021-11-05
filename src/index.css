@@ -1,0 +1,36 @@
+:root{
+  --color-primary-xo: #1d915f;
+  --color-primary-o: #26a36d;
+  --color-primary: #34BE82;
+  --color-primary-l: #46d496;
+  --color-primary-xl: #55e6a7;
+
+  --color-bg-l: #f2fff9;
+  --color-bg-o: #082032;
+
+  --color-secondary-xo: #1c2c38;
+  --color-secondary-o: #253745;
+  --color-secondary: #334756;
+  --color-secondary-l: #435a6b;
+  --color-secondary-xl: #556d80;
+
+  --font-title: 'Acme', sans-serif;
+  --font-text: 'Fira Sans', sans-serif;
+}
+
+html{
+  font-size: 10px;
+}
+html, body{
+  background-color: var(--color-bg-l);
+  color: var(--color-bg-o);
+  font-family: var(--font-text);
+}
+body{
+  font-size: 1.6rem;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
