@@ -1,0 +1,31 @@
+.nav{
+	display: flex;
+	position: fixed;
+	width: 100vw;
+	bottom: 0rem;
+	background-color: var(--color-bg-l);
+	z-index: 20;
+	box-shadow: 0px 10px 23px -4px rgba(0, 0, 0, 0.8);
+}
+.nav_list{
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 1rem 0;
+}
+.nav_item a{
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	transition: background-color 0.5s;
+}
+.nav_item a:hover{
+	background-color: var(--color-primary);
+}
+.nav_item a box-icon{
+	width: 2.4rem;
+	height: 2.4rem;
+}

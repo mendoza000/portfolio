@@ -27,6 +27,7 @@ html, body{
   font-family: var(--font-text);
   overflow-x: hidden;
   line-height: 2.2rem;
+  scroll-behavior: smooth;
 }
 body{
   font-size: 1.6rem;
@@ -38,4 +39,5 @@ body{
 
 #root{
   overflow-x: hidden;
+  padding-bottom: 3rem;
 }

@@ -1,0 +1,35 @@
+import React from 'react'
+import './Nav.css'
+
+const Nav = () => {
+	
+	return(
+		<nav className="nav">
+			<ul className="nav_list">
+				<li className="nav_item">
+					<a href="#">
+						<box-icon name='home' color="#082032" size="cssSize"></box-icon>
+					</a>
+				</li>
+				<li className="nav_item">
+					<a href="#about">
+						<box-icon name='user' color="#082032" size="cssSize"></box-icon>
+					</a>
+				</li>
+				<li className="nav_item">
+					<a href="#services">
+						<box-icon name='bookmark' color="#082032" size="cssSize"></box-icon>
+					</a>
+				</li>
+				<li className="nav_item">
+					<a href="#projects">
+						<box-icon name='book' color="#082032" size="cssSize"></box-icon>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	)
+
+}
+
+export default Nav
