@@ -1,5 +1,8 @@
 import React from 'react'
 import Project from './Project'
+import img1 from '../../assets/rain000.jpeg'
+import img2 from '../../assets/ppt.jpeg'
+import img3 from '../../assets/hotel.png'
 import './Projects.css'
 
 const Projects = () => {
@@ -14,19 +17,19 @@ const Projects = () => {
 			<div className="projects_list">
 				
 				<Project 
-					img={'../../assets/rain000.jpeg'}
+					img={img1}
 					title='Aplicacion web del clima'
 					skill='HTML - CSS - JS - VITE'
 				/>
 
 				<Project 
-					img={'../../assets/ppt.jpeg'}
+					img={img2}
 					title='Juego web'
 					skill='HTML - CSS - JS - VITE'
 				/>
 
 				<Project 
-					img={'../../assets/hotel.png'}
+					img={img3}
 					title='Pagina web de hotel'
 					skill='HTML - CSS'
 				/>
