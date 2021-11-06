@@ -6,6 +6,8 @@
 	background-color: var(--color-bg-l);
 	z-index: 20;
 	box-shadow: 0px 10px 23px -4px rgba(0, 0, 0, 0.8);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 }
 .nav_list{
 	display: flex;

@@ -6,6 +6,7 @@ const Services = () => {
 	return(
 		<div className="services" id="services">
 			<h3 className="services_title">
+				<box-icon name='crown' color="#1d915f"></box-icon>
 				Servicios
 			</h3>
 
