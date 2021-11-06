@@ -7,7 +7,7 @@ const PortfolioApp = () => {
 	return(
 		<>
 			<Header />
-			{/*<AboutMe />*/}
+			<AboutMe />
 		</>
 	)
 

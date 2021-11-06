@@ -26,6 +26,7 @@ html, body{
   color: var(--color-bg-o);
   font-family: var(--font-text);
   overflow-x: hidden;
+  line-height: 2.2rem;
 }
 body{
   font-size: 1.6rem;
