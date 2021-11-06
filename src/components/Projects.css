@@ -27,7 +27,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	border-radius: 15px;
-	box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.4);
 }
 .projects_card img{
 	width: 100%;
@@ -47,6 +47,7 @@
 	justify-content: center;
 	align-items: center;
 	opacity: 0;
+	overflow: hidden;
 }
 .project_card_title{
 	font-weight: bold;
@@ -57,8 +58,35 @@
 	font-size: 1.5rem;
 }
 .project_card_line{
-	background-color: var(--color-bg-l);
+	background-color: var(--color-primary);
 	width: 6rem;
 	height: 0.2rem;
 	margin-bottom: 1rem;
+}
+
+.project_card_btnContainer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-gap: 1rem;
+	margin-top: 1rem;
+}
+.project_card_btn{
+	width: 12rem;
+	height: 3rem;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	background-color: transparent;
+	color: inherit;
+	border: 2px solid var(--color-primary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+.project_card_btn box-icon{
+	width: 2rem;
+	fill: var(--color-primary);
+	margin-right: 0.3rem;
 }

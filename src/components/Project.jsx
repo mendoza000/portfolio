@@ -3,26 +3,34 @@ import { gsap } from "gsap";
 import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
-const Project = ({img, title, text, skill}) => {
+const Project = ({img, title, text, skill, urlWeb, urlRepo}) => {
 	
 	const hover = useRef()
 	const titleP = useRef()
 	const line = useRef()
 	const skillP = useRef()
+	const btn1 = useRef()
+	const btn2 = useRef()
 
 	useEffect(() => {
 
-		gsap.from(hover.current, {
+		gsap.to(hover.current, {
 			opacity: 0
 		})
-		gsap.from(titleP.current, {
+		gsap.to(titleP.current, {
 			y: -50,
 		})
-		gsap.from(line.current, {
+		gsap.to(line.current, {
 			y: -50,
 		})
-		gsap.from(skillP.current, {
+		gsap.to(skillP.current, {
 			y: 50,
+		})
+		gsap.to(btn1.current, {
+			x: -150,
+		})
+		gsap.to(btn2.current, {
+			x: 150,
 		})
 
 
@@ -46,7 +54,14 @@ const Project = ({img, title, text, skill}) => {
 			y: 0,
 			duration: 0.7
 		})
-
+		gsap.to(btn1.current, {
+			x: 0,
+			duration: 0.7
+		})
+		gsap.to(btn2.current, {
+			x: 0,
+			duration: 0.7
+		})
 
 	}
 	const noViewHover = () => {
@@ -65,6 +80,14 @@ const Project = ({img, title, text, skill}) => {
 		})
 		gsap.to(skillP.current, {
 			y: 50,
+			duration: 0.7
+		})
+		gsap.to(btn1.current, {
+			x: -150,
+			duration: 0.7
+		})
+		gsap.to(btn2.current, {
+			x: 150,
 			duration: 0.7
 		})
 
@@ -86,6 +109,26 @@ const Project = ({img, title, text, skill}) => {
 				<p className="project_card_skill" ref={skillP}>
 					{skill}
 				</p>
+
+				<div className="project_card_btnContainer">
+					
+					<a 
+						className="project_card_btn"
+						href={urlWeb}
+						target='_blank'
+						ref={btn1}>
+						<box-icon name='rocket'></box-icon>
+						Ver pagina
+					</a>
+					<a 
+						className="project_card_btn"
+						href={urlRepo}
+						target='_blank' 
+						ref={btn2}>
+						<box-icon name='planet'></box-icon>
+						Ver Github
+					</a>
+				</div>
 			</div>
 
 		</div>
