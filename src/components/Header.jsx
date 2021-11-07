@@ -8,7 +8,7 @@ import {darkMode, ligthMode} from '../helpers/setTheme'
 import './Header.css'
 
 const Header = () => {
-
+	
 	const [icon, setIcon] = useState('sun')
 
 	const textSpan = useRef()
