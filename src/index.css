@@ -38,6 +38,6 @@ body{
 }
 
 #root{
-  overflow-x: hidden;
-  padding-bottom: 3rem;
+  overflow: hidden;
+  padding-bottom: 5rem;
 }
