@@ -42,6 +42,18 @@ body{
   overflow: hidden;
   padding-bottom: 5rem;
 }
+body::-webkit-scrollbar {
+    width: 5px;     /* Tamaño del scroll en vertical */
+    height: 3px;    /* Tamaño del scroll en horizontal */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-o);
+    border-radius: 4px;
+    transition: background-color 0.5s;
+}
+body::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-primary-xo);
+}
 
 @media screen and (min-width: 500px){
   #root{
