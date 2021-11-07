@@ -9,7 +9,13 @@ export const animateHeader = (
   thirdPoint, 
   fourthPoint, 
   fifthPoint, 
-  sixthPoint ) => {
+  sixthPoint,
+  seventhPoint,
+  eighthPoint,
+  ninethPoint,
+	tenthPoint, 
+	eleventhPoint,
+	twoeleventhPoint ) => {
 
 		gsap.from(header.current, {
 			opacity: 0
@@ -140,4 +146,123 @@ export const animateHeader = (
 			ease: 'linear'
 		})
 
+		gsap.from(seventhPoint?.current, {
+			opacity: 0,
+			delay: 2,
+		})
+		gsap.to(seventhPoint?.current, {
+			delay: 2.5,
+			x: 200,
+			ease: 'linear',
+			y: 50,
+			duration: 2
+		})
+		gsap.to(seventhPoint?.current, {
+			rotate: 360,
+			yoyo: true,
+			duration: 2,
+			delay: 2.5,
+			repeat: -1,
+			ease: 'linear'
+		})
+
+		gsap.from(eighthPoint?.current, {
+			opacity: 0,
+			delay: 2,
+		})
+		gsap.to(eighthPoint?.current, {
+			delay: 2.5,
+			x: -200,
+			ease: 'linear',
+			y: -50,
+			duration: 2
+		})
+		gsap.to(eighthPoint?.current, {
+			rotate: 360,
+			yoyo: true,
+			duration: 2,
+			delay: 2.5,
+			repeat: -1,
+			ease: 'linear'
+		})
+
+		gsap.from(ninethPoint?.current, {
+			opacity: 0,
+			delay: 2,
+		})
+		gsap.to(ninethPoint?.current, {
+			delay: 2.5,
+			x: -250,
+			ease: 'linear',
+			y: 100,
+			duration: 2
+		})
+		gsap.to(ninethPoint?.current, {
+			rotate: 360,
+			yoyo: true,
+			duration: 2,
+			delay: 2.5,
+			repeat: -1,
+			ease: 'linear'
+		})
+
+		gsap.from(tenthPoint?.current, {
+			opacity: 0,
+			delay: 2,
+		})
+		gsap.to(tenthPoint?.current, {
+			delay: 2.5,
+			x: 250,
+			ease: 'linear',
+			y: -150,
+			duration: 2
+		})
+		gsap.to(tenthPoint?.current, {
+			rotate: 360,
+			yoyo: true,
+			duration: 2,
+			delay: 2.5,
+			repeat: -1,
+			ease: 'linear'
+		})
+
+		gsap.from(eleventhPoint?.current, {
+			opacity: 0,
+			delay: 2,
+		})
+		gsap.to(eleventhPoint?.current, {
+			delay: 2.5,
+			x: -260,
+			ease: 'linear',
+			y: -210,
+			duration: 2
+		})
+		gsap.to(eleventhPoint?.current, {
+			rotate: 360,
+			yoyo: true,
+			duration: 2,
+			delay: 2.5,
+			repeat: -1,
+			ease: 'linear'
+		})
+
+		gsap.from(twoeleventhPoint?.current, {
+			opacity: 0,
+			delay: 2,
+		})
+		gsap.to(twoeleventhPoint?.current, {
+			delay: 2.5,
+			x: 260,
+			ease: 'linear',
+			y: 200,
+			duration: 2
+		})
+		gsap.to(twoeleventhPoint?.current, {
+			rotate: 360,
+			yoyo: true,
+			duration: 2,
+			delay: 2.5,
+			repeat: -1,
+			ease: 'linear'
+		})
 	}

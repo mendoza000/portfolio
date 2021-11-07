@@ -26,6 +26,9 @@
 	box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.2);
 	border-radius: 15px;
 	height: 12rem;
+	width: 15rem;
+	margin-right: auto;
+	margin-left: auto;
 }
 .skills_card svg{
 	width: 5rem;
@@ -58,4 +61,23 @@
 .skills_card p{
 	margin-top: 1rem;
 	font-weight: bold;
+}
+
+@media screen and (min-width: 600px){
+	.skills_list{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media screen and (min-width: 800px){
+	.skills_list{
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+@media screen and (min-width:  900px){
+	.skills_title{
+		margin-left: 4rem;
+	}
+	.skills_list{
+		margin-bottom: 12rem;
+	}
 }

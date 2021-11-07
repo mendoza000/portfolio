@@ -14,8 +14,12 @@ const Header = () => {
 	const fourthPoint = useRef()
 	const fifthPoint = useRef()
 	const sixthPoint = useRef()
-
-	
+	const seventhPoint = useRef()
+	const eighthPoint = useRef()
+	const ninethPoint = useRef()
+	const tenthPoint = useRef()
+	const eleventhPoint = useRef()
+	const twoeleventhPoint = useRef()
 
 	useEffect(() => {
     const options = {
@@ -39,7 +43,7 @@ const Header = () => {
   }, [])
 
   useEffect(() => {
-  	animateHeader(header ,firstPoint ,secondPoint ,thirdPoint ,fourthPoint ,fifthPoint ,sixthPoint)
+  	animateHeader(header ,firstPoint ,secondPoint ,thirdPoint ,fourthPoint ,fifthPoint ,sixthPoint, seventhPoint, eighthPoint, ninethPoint, tenthPoint,eleventhPoint, twoeleventhPoint)
   }, [])
 
 	return(
@@ -60,6 +64,12 @@ const Header = () => {
 			<div className="header_pointEffect" ref={fourthPoint}></div>
 			<div className="header_pointEffect" ref={fifthPoint}></div>
 			<div className="header_pointEffect" ref={sixthPoint}></div>
+			<div className="header_pointEffect" ref={seventhPoint}></div>
+			<div className="header_pointEffect" ref={eighthPoint}></div>
+			<div className="header_pointEffect" ref={ninethPoint}></div>
+			<div className="header_pointEffect" ref={tenthPoint}></div>
+			<div className="header_pointEffect" ref={eleventhPoint}></div>
+			<div className="header_pointEffect" ref={twoeleventhPoint}></div>
 		</header>
 	)
 

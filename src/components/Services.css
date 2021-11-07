@@ -28,6 +28,9 @@
 	transition: background-color 0.5s, box-shadow 0.4s;
 	min-height: 23rem;
 	max-height: 23rem;
+	max-width: 25rem;
+	margin-right: auto;
+	margin-left: auto;
 }
 .services_card:hover{
 	background-color: rgba(85,230,167,0.6);
@@ -51,4 +54,23 @@
 .services_card_text{
 	text-align: center;
 	margin-top: 1rem;
+}
+
+@media screen and (min-width:  700px){
+	.services_list{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (min-width:  700px){
+	.services_list{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media screen and (min-width:  900px){
+	.services_title{
+		margin-left: 4rem;
+	}
+	.services_list{
+		margin-bottom: 12rem;
+	}
 }
