@@ -8,6 +8,7 @@
 	box-shadow: 0px 10px 23px -4px rgba(0, 0, 0, 0.8);
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+	transition: background-color 0.5s;
 }
 .nav_list{
 	display: flex;
@@ -36,6 +37,8 @@
 .nav_item a box-icon{
 	width: 2.4rem;
 	height: 2.4rem;
+	fill: var(--color-bg-o);
+	transition: fill 0.5s;
 }
 
 @media screen and (min-width: 500px){
@@ -43,11 +46,13 @@
 	.nav{
 		position: initial;
 		box-shadow: none;
+		padding: 1rem 2rem;
 	}
 	.nav_list{
 		justify-content: flex-end;
 		grid-gap: 1rem;
-		margin-right: 1rem;
+		display: flex;
+		margin-left: -3rem;
 	}
 	.nav_item a{
 		width: 9rem;

@@ -13,7 +13,7 @@ const Services = () => {
 			<div className="services_list">
 				
 				<div className="services_card">
-					<box-icon name='code-alt' size="cssSize" color="#082032"></box-icon>
+					<box-icon name='code-alt' size="cssSize"></box-icon>
 					<p className="services_card_title">
 						Desarrollo Web
 					</p>
@@ -23,7 +23,7 @@ const Services = () => {
 				</div>
 
 				<div className="services_card">
-					<box-icon name='mobile-alt' size="cssSize" color="#082032"></box-icon>
+					<box-icon name='mobile-alt' size="cssSize"></box-icon>
 					<p className="services_card_title">
 						Diseño responsive
 					</p>
@@ -33,7 +33,7 @@ const Services = () => {
 				</div>
 
 				<div className="services_card">
-					<box-icon name='palette' size="cssSize" color="#082032"></box-icon>
+					<box-icon name='palette' size="cssSize"></box-icon>
 					<p className="services_card_title">
 						Adaptibilidad de diseño
 					</p>

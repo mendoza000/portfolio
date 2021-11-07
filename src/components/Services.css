@@ -32,11 +32,11 @@
 	margin-right: auto;
 	margin-left: auto;
 }
-.services_card:hover{
+/*.services_card:hover{
 	background-color: rgba(85,230,167,0.6);
 	box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.4),inset 0px -25px 25px -4px rgba(85,230,167,0.7);
 	
-}
+}*/
 .services_card box-icon{
 	width: 6rem;
 	height: 6rem;
@@ -45,7 +45,8 @@
 	padding: 1rem;
 	/*background-color: var(--color-primary-xl);*/
 	box-shadow: 0px 2px 14px -4px rgba(0, 0, 0, 0.4);
-
+	fill: var(--color-bg-o);
+	transition: fill 0.5s;
 }
 .services_card_title{
 	font-size: 1.8rem;

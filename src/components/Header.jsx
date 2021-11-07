@@ -1,9 +1,15 @@
-import React,{useRef, useEffect} from 'react'
+import React,{useRef, useEffect, useState} from 'react'
 import Typed from 'typed.js';
+import { gsap } from "gsap";
+import { PixiPlugin } from "gsap/PixiPlugin.js";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 import {animateHeader} from '../helpers/animateHeader'
+import {darkMode, ligthMode} from '../helpers/setTheme'
 import './Header.css'
 
 const Header = () => {
+
+	const [icon, setIcon] = useState('sun')
 
 	const textSpan = useRef()
 	const typed = useRef()
@@ -14,12 +20,14 @@ const Header = () => {
 	const fourthPoint = useRef()
 	const fifthPoint = useRef()
 	const sixthPoint = useRef()
-	const seventhPoint = useRef()
+	const seventhPoint = useRef('')
 	const eighthPoint = useRef()
 	const ninethPoint = useRef()
 	const tenthPoint = useRef()
 	const eleventhPoint = useRef()
 	const twoeleventhPoint = useRef()
+	const switchCircle = useRef()
+	let dark = false
 
 	useEffect(() => {
     const options = {
@@ -46,6 +54,26 @@ const Header = () => {
   	animateHeader(header ,firstPoint ,secondPoint ,thirdPoint ,fourthPoint ,fifthPoint ,sixthPoint, seventhPoint, eighthPoint, ninethPoint, tenthPoint,eleventhPoint, twoeleventhPoint)
   }, [])
 
+  const setTheme = () => {
+
+  	if(!dark){
+  		setIcon('moon')
+  		gsap.to(switchCircle.current, {
+  			x: 30
+  		})
+  		darkMode()
+  		dark = true
+  	}else{
+  		setIcon('sun')
+  		gsap.to(switchCircle.current, {
+  			x: 0
+  		})
+  		ligthMode()
+  		dark= false
+  	}
+
+  }
+
 	return(
 		<header className="header" ref={header}>
 			<h1 className="header_title">Omar Mendoza</h1>
@@ -54,6 +82,11 @@ const Header = () => {
 				<span ref={textSpan}>
 				</span>
 			</p>
+			<div onClick={setTheme} className="darkmode">
+				<div className="buttonCircle" ref={switchCircle}>
+					<box-icon name={icon} size='cssSize'></box-icon>
+				</div>
+			</div>
 
 			<div className="header_circleFlur"></div>
 			<div className="header_circleFlur-last"></div>
@@ -64,7 +97,7 @@ const Header = () => {
 			<div className="header_pointEffect" ref={fourthPoint}></div>
 			<div className="header_pointEffect" ref={fifthPoint}></div>
 			<div className="header_pointEffect" ref={sixthPoint}></div>
-			<div className="header_pointEffect" ref={seventhPoint}></div>
+			{/*<div className="header_pointEffect" ref={seventhPoint}></div>*/}
 			<div className="header_pointEffect" ref={eighthPoint}></div>
 			<div className="header_pointEffect" ref={ninethPoint}></div>
 			<div className="header_pointEffect" ref={tenthPoint}></div>

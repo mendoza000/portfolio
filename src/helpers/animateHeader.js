@@ -146,7 +146,7 @@ export const animateHeader = (
 			ease: 'linear'
 		})
 
-		gsap.from(seventhPoint?.current, {
+		/*gsap.from(seventhPoint?.current, {
 			opacity: 0,
 			delay: 2,
 		})
@@ -164,7 +164,7 @@ export const animateHeader = (
 			delay: 2.5,
 			repeat: -1,
 			ease: 'linear'
-		})
+		})*/
 
 		gsap.from(eighthPoint?.current, {
 			opacity: 0,
