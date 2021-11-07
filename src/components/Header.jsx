@@ -8,7 +8,7 @@ import {darkMode, ligthMode} from '../helpers/setTheme'
 import './Header.css'
 
 const Header = () => {
-	
+
 	const [icon, setIcon] = useState('sun')
 
 	const textSpan = useRef()
@@ -56,17 +56,19 @@ const Header = () => {
 
   const setTheme = () => {
 
-  	if(!dark){
+  	if(icon === 'sun'){
   		setIcon('moon')
   		gsap.to(switchCircle.current, {
-  			x: 30
+  			x: 30,
+  			duration: 0.5
   		})
   		darkMode()
-  		dark = true
-  	}else{
+  	}
+  	if(icon === 'moon'){
   		setIcon('sun')
   		gsap.to(switchCircle.current, {
-  			x: 0
+  			x: 0,
+  			duration: 0.5
   		})
   		ligthMode()
   		dark= false
