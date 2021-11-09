@@ -32,13 +32,13 @@ const Header = () => {
 	useEffect(() => {
     const options = {
     	strings: [
-        'Soy desarrollador web!',
-        'Soy autodidacta!',
-        'Soy amante de la tecnologia!'
+        'Desarrollador web!',
+        'Autodidacta!',
+        'Amante de la tecnologia!'
       ],
       typeSpeed: 70,
       backSpeed: 70,
-      backDelay: 4000,
+      backDelay: 3000,
       loop: true,
       /*startDelay: 1500*/
     };
@@ -78,7 +78,9 @@ const Header = () => {
 
 	return(
 		<header className="header" ref={header}>
-			<h1 className="header_title">Omar Mendoza</h1>
+			<h1 className="header_title">
+				Omar Mendoza
+			</h1>
 			<p className="header_autoTyped">
 				>
 				<span ref={textSpan}>
@@ -93,6 +95,7 @@ const Header = () => {
 			<div className="header_circleFlur"></div>
 			<div className="header_circleFlur-last"></div>
 
+
 			<div className="header_pointEffect" ref={firstPoint}></div>
 			<div className="header_pointEffect" ref={secondPoint}></div>
 			<div className="header_pointEffect" ref={thirdPoint}></div>
@@ -105,6 +108,8 @@ const Header = () => {
 			<div className="header_pointEffect" ref={tenthPoint}></div>
 			<div className="header_pointEffect" ref={eleventhPoint}></div>
 			<div className="header_pointEffect" ref={twoeleventhPoint}></div>
+
+			{/*<div className="header_line" ref={line}></div>*/}
 		</header>
 	)
 

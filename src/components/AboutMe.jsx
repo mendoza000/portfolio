@@ -10,7 +10,7 @@ const AboutMe = () => {
 					¿Quien soy yo?
 				</h3>
 
-				<p className="about_text">Hola ✌, yo soy Omar Mendoza, me considero un joven que puede adaptarse a los cambios y abierto a nuevos conocimientos y retos siempre para ser mejor cada dia! Actualemente estoy desarrollando mis habilidades de forma autodidacta.</p>
+				<p className="about_text">Hola ✌. Soy Omar Mendoza, un joven muy apasionado por la tecnologia y el desarrollo de aplicaciones y servicios web. Me puedo adaptar a los cambios que se presenten, y al mismo tiempo estoy muy abierto al aprendizaje continuo, acepto grandes desafios y retos que me permitan mejorar cada día. Actualmente estoy desarrollando mis habilidades de forma autodidacta.</p>
 			</div>
 
 			<div className="about_col">

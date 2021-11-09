@@ -11,7 +11,7 @@ const Footer = () => {
 			</h3>
 
 		<p className="footer_text">
-			Si estas interesado en mis servicios como desarollador web puedes contactarme, me puedo adaptar a tus necesidades y a las de tu negocio!
+			Si estas interesado en mis servicios como desarrollador web, puedes contactarme, y me puedo adaptar a tus necesidades y a las de tu negocio.
 		</p>
 
 		<div className="footer_contacts">
@@ -29,7 +29,7 @@ const Footer = () => {
 		</div>
 
 		<p className="footer_copy">
-			Hecho por Omar Mendoza. 🌵
+			Created By Omar Mendoza.
 		</p>
 		</footer>
 	)

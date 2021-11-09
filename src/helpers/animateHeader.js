@@ -15,7 +15,7 @@ export const animateHeader = (
   ninethPoint,
 	tenthPoint, 
 	eleventhPoint,
-	twoeleventhPoint ) => {
+	twoeleventhPoint) => {
 
 		gsap.from(header.current, {
 			opacity: 0
