@@ -11,7 +11,6 @@ export const darkMode = () => {
   const skills = document.querySelectorAll('.skills_card');
   const footer = document.querySelector('.footer');
   const footerCopy = document.querySelector('.footer_copy');
-  const footerContacts = document.querySelectorAll('.footer_contacts a box-icon');
 
   body.style.backgroundColor = 'var(--color-bg-o)'
   html.style.backgroundColor = 'var(--color-bg-o)'
@@ -35,9 +34,6 @@ export const darkMode = () => {
   skills.forEach(e => {
   	e.style.backgroundColor = 'var(--color-secondary)'
   })
-  footerContacts.forEach(e => {
-  	e.style.fill = 'var(--color-secondary-xl)'
-  })
 }
 
 export const ligthMode = () => {
@@ -53,7 +49,6 @@ export const ligthMode = () => {
   const skills = document.querySelectorAll('.skills_card');
   const footer = document.querySelector('.footer');
   const footerCopy = document.querySelector('.footer_copy');
-  const footerContacts = document.querySelectorAll('.footer_contacts a box-icon');
 
   body.style.backgroundColor = 'var(--color-bg-l)'
   html.style.backgroundColor = 'var(--color-bg-l)'
@@ -76,8 +71,5 @@ export const ligthMode = () => {
   })
   skills.forEach(e => {
     e.style.backgroundColor = 'var(--color-bg-l)'
-  })
-  footerContacts.forEach(e => {
-    e.style.fill = 'var(--color-secondary-xl)'
   })
 }

@@ -28,7 +28,7 @@
 	grid-gap: 1rem;
 }
 .footer_contact box-icon{
-	fill: var(--color-secondary-xl);
+	fill: var(--color-primary-xo);
 	width: 3rem;
 	display: flex;
 	justify-content: center;

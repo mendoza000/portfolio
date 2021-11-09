@@ -18,7 +18,7 @@ const Services = () => {
 						Desarrollo Web
 					</p>
 					<p className="services_card_text">
-						Puedo desarrollar un sitio web que cubra sus necesidades y se adapte a usted y su negocio.
+						Trabajo con mis clientes en desarrollar un sitio web que cubra todas sus necesidades y las de su negocio.
 					</p>
 				</div>
 
@@ -28,17 +28,17 @@ const Services = () => {
 						Diseño responsive
 					</p>
 					<p className="services_card_text">
-						Las paginas web no se ven siempre desde una pantalla igual, a veces desde un telefono, tablet o laptop. Yo puedo hacer que se vea bien en todos lados.
+						Las paginas web, no se visualizan de la misma forma en un dispositivo móvil que desde una computadora. Sin embargo puedo hacer que su sitio web se ve bien en todos lados.
 					</p>
 				</div>
 
 				<div className="services_card">
 					<box-icon name='palette' size="cssSize"></box-icon>
 					<p className="services_card_title">
-						Adaptibilidad de diseño
+						Adaptabilidad de diseño
 					</p>
 					<p className="services_card_text">
-						Tambien puedo trabajar con algun diseño que usted ya tenga, o bien, crear uno desde cero con algunon patrones o colores que le llamen la atención.
+						Me especializo en crear diseños desde cero, y tambien puedo trabajar en diseños que mis clientes ya posean, que nos permita tener una colaboración de gran valor en el resultado final.
 					</p>
 				</div>
 
