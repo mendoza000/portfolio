@@ -8,7 +8,7 @@ import './Projects.css'
 const Projects = () => {
 	
 	return(
-		<div className="projects" id="projects">
+		<div className="projects mx" id="projects">
 			<h3 className="projects_title">
 				<box-icon name='rocket' color="#1d915f"></box-icon>
 				Proyectos

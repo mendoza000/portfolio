@@ -4,7 +4,7 @@ import './Skills.css'
 const Skills = () => {
 	
 	return(
-		<div className="skills">
+		<div className="skills mx">
 			
 			<h3 className="skills_title">
 				<box-icon name='planet' color="#1d915f"></box-icon>

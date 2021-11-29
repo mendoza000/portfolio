@@ -60,3 +60,10 @@ body::-webkit-scrollbar-thumb:active {
     padding-bottom: 0px
   }
 }
+@media screen and (min-width: 1226px){
+  .mx{
+    max-width: 110rem;
+    margin-right: auto;
+    margin-left: auto
+  }
+}
