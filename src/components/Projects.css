@@ -10,8 +10,8 @@
 }
 
 .projects_list{
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	display: flex;
+	flex-wrap: wrap;
 	grid-gap: 2rem;
 }
 
@@ -28,6 +28,7 @@
 	margin-left: auto;
 	border-radius: 15px;
 	box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.4);
+	margin-bottom: 2rem;
 }
 .projects_card img{
 	width: 100%;
@@ -56,6 +57,8 @@
 }
 .project_card_skill{
 	font-size: 1.5rem;
+	max-width: 30rem;
+	text-align: center;
 }
 .project_card_line{
 	background-color: var(--color-primary);
@@ -105,7 +108,7 @@
 	}
 }
 
-@media screen and (min-width: 700px){
+/*@media screen and (min-width: 700px){
 	.projects_list{
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -123,4 +126,4 @@
 	.projects_list{
 		margin-bottom: 12rem;
 	}
-}
+}*/

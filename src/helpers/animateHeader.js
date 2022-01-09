@@ -37,14 +37,6 @@ export const animateHeader = (
 			y: 100,
 			duration: 2
 		})
-		gsap.to(firstPoint.current, {
-			rotate: 360,
-			yoyo: true,
-			duration: 2,
-			delay: 2.5,
-			repeat: -1,
-			ease: 'linear'
-		})
 		
 		gsap.from(secondPoint.current, {
 			opacity: 0,
@@ -56,14 +48,6 @@ export const animateHeader = (
 			ease: 'linear',
 			y: 163,
 			duration: 2
-		})
-		gsap.to(secondPoint.current, {
-			rotate: 360,
-			yoyo: true,
-			duration: 2,
-			delay: 2.5,
-			repeat: -1,
-			ease: 'linear'
 		})
 
 		gsap.from(thirdPoint.current, {
@@ -77,14 +61,6 @@ export const animateHeader = (
 			y: -180,
 			duration: 2
 		})
-		gsap.to(thirdPoint.current, {
-			rotate: 360,
-			yoyo: true,
-			duration: 2,
-			delay: 2.5,
-			repeat: -1,
-			ease: 'linear'
-		})
 
 		gsap.from(fourthPoint.current, {
 			opacity: 0,
@@ -96,14 +72,6 @@ export const animateHeader = (
 			ease: 'linear',
 			y: -100,
 			duration: 2
-		})
-		gsap.to(fourthPoint.current, {
-			rotate: 360,
-			yoyo: true,
-			duration: 2,
-			delay: 2.5,
-			repeat: -1,
-			ease: 'linear'
 		})
 
 		gsap.from(fifthPoint.current, {
@@ -117,14 +85,6 @@ export const animateHeader = (
 			y: -230,
 			duration: 2
 		})
-		gsap.to(fifthPoint.current, {
-			rotate: 360,
-			yoyo: true,
-			duration: 2,
-			delay: 2.5,
-			repeat: -1,
-			ease: 'linear'
-		})
 
 		gsap.from(sixthPoint.current, {
 			opacity: 0,
@@ -136,14 +96,6 @@ export const animateHeader = (
 			ease: 'linear',
 			y: 220,
 			duration: 2
-		})
-		gsap.to(sixthPoint.current, {
-			rotate: 360,
-			yoyo: true,
-			duration: 2,
-			delay: 2.5,
-			repeat: -1,
-			ease: 'linear'
 		})
 
 		/*gsap.from(seventhPoint?.current, {
@@ -177,14 +129,6 @@ export const animateHeader = (
 			y: -50,
 			duration: 2
 		})
-		gsap.to(eighthPoint?.current, {
-			rotate: 360,
-			yoyo: true,
-			duration: 2,
-			delay: 2.5,
-			repeat: -1,
-			ease: 'linear'
-		})
 
 		gsap.from(ninethPoint?.current, {
 			opacity: 0,
@@ -196,14 +140,6 @@ export const animateHeader = (
 			ease: 'linear',
 			y: 100,
 			duration: 2
-		})
-		gsap.to(ninethPoint?.current, {
-			rotate: 360,
-			yoyo: true,
-			duration: 2,
-			delay: 2.5,
-			repeat: -1,
-			ease: 'linear'
 		})
 
 		gsap.from(tenthPoint?.current, {
@@ -217,14 +153,6 @@ export const animateHeader = (
 			y: -150,
 			duration: 2
 		})
-		gsap.to(tenthPoint?.current, {
-			rotate: 360,
-			yoyo: true,
-			duration: 2,
-			delay: 2.5,
-			repeat: -1,
-			ease: 'linear'
-		})
 
 		gsap.from(eleventhPoint?.current, {
 			opacity: 0,
@@ -237,14 +165,6 @@ export const animateHeader = (
 			y: -210,
 			duration: 2
 		})
-		gsap.to(eleventhPoint?.current, {
-			rotate: 360,
-			yoyo: true,
-			duration: 2,
-			delay: 2.5,
-			repeat: -1,
-			ease: 'linear'
-		})
 
 		gsap.from(twoeleventhPoint?.current, {
 			opacity: 0,
@@ -256,13 +176,5 @@ export const animateHeader = (
 			ease: 'linear',
 			y: 200,
 			duration: 2
-		})
-		gsap.to(twoeleventhPoint?.current, {
-			rotate: 360,
-			yoyo: true,
-			duration: 2,
-			delay: 2.5,
-			repeat: -1,
-			ease: 'linear'
 		})
 	}

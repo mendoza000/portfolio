@@ -16,7 +16,7 @@ export const darkMode = () => {
   html.style.backgroundColor = 'var(--color-bg-o)'
   body.style.color = 'var(--color-bg-l)'
   html.style.color = 'var(--color-bg-l)'
-  nav.style.backgroundColor = 'var(--color-secondary)'
+  nav.style.backgroundColor = 'var(--color-bg-o)'
   nav.style.color = 'var(--color-bg-l)'
   autoTypedSpan.style.color = 'var(--color-bg-l)'
   footer.style.backgroundColor = 'var(--color-secondary-xo)'

@@ -3,6 +3,7 @@ import Project from './Project'
 import img1 from '../../assets/rain000.jpeg'
 import img2 from '../../assets/ppt.jpeg'
 import img3 from '../../assets/hotel.png'
+import img4 from '../../assets/journal000.jpeg'
 import './Projects.css'
 
 const Projects = () => {
@@ -38,6 +39,14 @@ const Projects = () => {
 					skill='HTML - CSS'
 					urlWeb='https://hotel-demo.vercel.app/'
 					urlRepo='https://github.com/mendoza000/htbp-demo'
+				/>
+
+				<Project 
+					img={img4}
+					title='Aplicacion web de notas'
+					skill='HTML - CSS - JS - VITE - REACT - REDUX - FIREBASE'
+					urlWeb='https://journal000.vercel.app/'
+					urlRepo='https://github.com/mendoza000/journalapp'
 				/>
 
 			</div>
