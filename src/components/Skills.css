@@ -58,6 +58,15 @@
 .skills_card:nth-child(8) svg{
 	fill: #646CFF;
 }
+.skills_card:nth-child(9) svg{
+	fill: #61DAFB;
+}
+.skills_card:nth-child(10) svg{
+	fill: #764ABC;
+}
+.skills_card:nth-child(11) svg{
+	fill: #CC6699;
+}
 
 .skills_card p{
 	margin-top: 1rem;

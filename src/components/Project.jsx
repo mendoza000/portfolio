@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
-const Project = ({img, title, text, skill, urlWeb, urlRepo}) => {
+const Project = ({img, title, text, skill, urlWeb, urlRepo, infoText}) => {
 	
 	const hover = useRef()
 	const titleP = useRef()
@@ -11,6 +11,9 @@ const Project = ({img, title, text, skill, urlWeb, urlRepo}) => {
 	const skillP = useRef()
 	const btn1 = useRef()
 	const btn2 = useRef()
+	const info = useRef()
+	const card = useRef()
+	const image = useRef()
 
 	useEffect(() => {
 
@@ -31,6 +34,15 @@ const Project = ({img, title, text, skill, urlWeb, urlRepo}) => {
 		})
 		gsap.to(btn2.current, {
 			x: 150,
+		})
+		gsap.to(info.current, {
+			opacity: 0,
+			zIndex: -1,
+			display: 'none'
+		})
+		gsap.to(card.current, {
+			minHeight: '16rem',
+			maxHeight: '16rem',
 		})
 
 
@@ -63,6 +75,21 @@ const Project = ({img, title, text, skill, urlWeb, urlRepo}) => {
 			duration: 0.7
 		})
 
+		// gsap.to(info.current, {
+		// 	opacity: 1,
+		// 	zIndex: 1,
+		// 	display: '',
+		// 	duration: 1.0
+		// })
+		// gsap.to(card.current, {
+		// 	minHeight: '35rem',
+		// 	maxHeight: '35rem',
+		// 	duration: 1.0
+		// })
+		// gsap.to(image.current, {
+		// 	height: '18rem'
+		// })
+
 	}
 	const noViewHover = () => {
 
@@ -91,17 +118,31 @@ const Project = ({img, title, text, skill, urlWeb, urlRepo}) => {
 			duration: 0.7
 		})
 
+		// gsap.to(info.current, {
+		// 	opacity: 0,
+		// 	zIndex: -1,
+		// 	display: 'none',
+		// })
+		// gsap.to(card.current, {
+		// 	minHeight: '16rem',
+		// 	maxHeight: '16rem',
+		// })
+
 	}
 
 	return(
-		<div className="projects_card">
-			<img src={img} alt="img project"/>
+		<div 
+			className="projects_card" 
+			ref={card}
+		>
+			<img src={img} alt="img project" ref={image}/>
 			
 			<div 
 				className="hover" 
-				ref={hover} 
+				ref={hover}
 				onMouseEnter={viewHover}
-				onMouseLeave={noViewHover}>
+				onMouseLeave={noViewHover}
+			>
 				<p className="project_card_title" ref={titleP}>
 					{title}
 				</p>
@@ -120,7 +161,7 @@ const Project = ({img, title, text, skill, urlWeb, urlRepo}) => {
 						<box-icon name='rocket'></box-icon>
 						Ver pagina
 					</a>
-					<a 
+					<a
 						className="project_card_btn"
 						href={urlRepo}
 						target='_blank' 
@@ -130,6 +171,14 @@ const Project = ({img, title, text, skill, urlWeb, urlRepo}) => {
 					</a>
 				</div>
 			</div>
+
+			<p className="project_info" ref={info}>
+				<span className="project_info-title">
+					<box-icon name="party"></box-icon>
+					INFORMACIÓN
+				</span>	
+				{infoText}
+			</p>
 
 		</div>
 	)
