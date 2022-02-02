@@ -2,8 +2,10 @@ import React from 'react'
 import Project from './Project'
 import img1 from '../../assets/rain000.jpeg'
 import img2 from '../../assets/ppt.jpeg'
-import img3 from '../../assets/hotel.png'
+// import img3 from '../../assets/hotel.png'
 import img4 from '../../assets/journal000.jpeg'
+import img5 from '../../assets/barber.png'
+import img6 from '../../assets/xo.jpeg'
 import './Projects.css'
 
 const Projects = () => {
@@ -19,7 +21,7 @@ const Projects = () => {
 				
 				<Project 
 					img={img1}
-					title='Aplicacion web del clima'
+					title='Aplicación web del clima'
 					skill='HTML - CSS - JS - WEBPACK'
 					urlWeb='https://mendoza000.github.io/rain000/'
 					urlRepo='https://github.com/mendoza000/rain000'
@@ -27,26 +29,42 @@ const Projects = () => {
 
 				<Project 
 					img={img2}
-					title='Juego web'
+					title='Juego web de piedra, papel y tijeras'
 					skill='HTML - CSS - JS - WEBPACK'
 					urlWeb='https://ppt000.netlify.app/'
 					urlRepo='https://github.com/mendoza000/ppt'
 				/>
 
-				<Project 
+				{/*<Project 
 					img={img3}
-					title='Pagina web de hotel'
+					title='Página web de hotel'
 					skill='HTML - CSS'
 					urlWeb='https://hotel-demo.vercel.app/'
 					urlRepo='https://github.com/mendoza000/htbp-demo'
-				/>
+				/>*/}
 
 				<Project 
 					img={img4}
-					title='Aplicacion web de notas'
-					skill='HTML - CSS - JS - VITE - REACT - REDUX - FIREBASE'
+					title='Aplicación web de notas'
+					skill='SASS - JS - VITE - REACT - REDUX - FIREBASE'
 					urlWeb='https://journal000.vercel.app/'
 					urlRepo='https://github.com/mendoza000/journalapp'
+				/>
+
+				<Project 
+					img={img5}
+					title='Página web de barberia'
+					skill='SASS - JS - VITE - REACT - REDUX'
+					urlWeb='https://barber-shop000.vercel.app/'
+					urlRepo='https://github.com/mendoza000/barber-shop'
+				/>
+
+				<Project 
+					img={img6}
+					title='Juego web de ceros y cruces'
+					skill='SASS - JS - VITE - REACT - REDUX'
+					urlWeb='https://xo000.vercel.app/'
+					urlRepo='https://github.com/mendoza000/xo'
 				/>
 
 			</div>
