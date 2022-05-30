@@ -70,7 +70,7 @@ const Projects = () => {
 
 				<Project 
 					img={img7}
-					title='Tienda virtual de Aguactes'
+					title='Tienda virtual de Agucates'
 					skill='JS - NEXTJS - SCSS - REDUX'
 					urlWeb='https://avostore000.vercel.app/'
 					urlRepo='https://github.com/mendoza000/avo-store'
