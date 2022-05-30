@@ -6,6 +6,7 @@ import img2 from '../../assets/ppt.jpeg'
 import img4 from '../../assets/journal000.jpeg'
 import img5 from '../../assets/barber.png'
 import img6 from '../../assets/xo.jpeg'
+import img7 from '../../assets/avoStore.png'
 import './Projects.css'
 
 const Projects = () => {
@@ -65,6 +66,14 @@ const Projects = () => {
 					skill='SASS - JS - VITE - REACT - REDUX'
 					urlWeb='https://xo000.vercel.app/'
 					urlRepo='https://github.com/mendoza000/xo'
+				/>
+
+				<Project 
+					img={img7}
+					title='Tienda virtual de Aguactes'
+					skill='JS - NEXTJS - SCSS - REDUX'
+					urlWeb='https://avostore000.vercel.app/'
+					urlRepo='https://github.com/mendoza000/avo-store'
 				/>
 
 			</div>
