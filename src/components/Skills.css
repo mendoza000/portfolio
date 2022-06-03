@@ -67,6 +67,9 @@
 .skills_card:nth-child(11) svg{
 	fill: #CC6699;
 }
+.skills_card:nth-child(12) svg{
+	fill: #000000;
+}
 
 .skills_card p{
 	margin-top: 1rem;
