@@ -1,0 +1,69 @@
+:root{
+  --color-primary-xo: #1d915f;
+  --color-primary-o: #26a36d;
+  --color-primary: #34BE82;
+  --color-primary-l: #46d496;
+  --color-primary-xl: #55e6a7;
+
+  --color-bg-l: #f2fff9;
+  --color-bg-o: #082032;
+
+  --color-secondary-xo: #061b2b;
+  --color-secondary-o: #082032;
+  --color-secondary: #0a2438;
+  --color-secondary-l: #0e2d45;
+  --color-secondary-xl: #123652;
+
+  --font-title: 'Acme', sans-serif;
+  --font-text: 'Fira Sans', sans-serif;
+}
+
+html{
+  font-size: 10px;
+}
+html, body{
+  background-color: var(--color-bg-l);
+  color: var(--color-bg-o);
+  font-family: var(--font-text);
+  overflow-x: hidden;
+  line-height: 2.2rem;
+  scroll-behavior: smooth;
+  transition: background-color 0.5s, color 0.5s;
+}
+body{
+  font-size: 1.6rem;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+body::-webkit-scrollbar {
+    width: 5px;     /* Tamaño del scroll en vertical */
+    height: 3px;    /* Tamaño del scroll en horizontal */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-o);
+    border-radius: 4px;
+    transition: background-color 0.5s;
+}
+body::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-primary-xo);
+}
+
+@media screen and (min-width: 500px){
+  #root{
+    padding-bottom: 0px
+  }
+}
+@media screen and (min-width: 1226px){
+  .mx{
+    max-width: 110rem;
+    margin-right: auto;
+    margin-left: auto
+  }
+}
