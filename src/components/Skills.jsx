@@ -28,6 +28,7 @@ const Skills = () => {
         <SkillCard name="TailwindCSS" xpath={"tailwindcss"} />
         <SkillCard name="Golang" xpath={"go"} />
         <SkillCard name="MySQL" xpath={"mysql"} />
+        <SkillCard name="Vue.js" xpath={"vuedotjs"} />
       </div>
     </div>
   );
