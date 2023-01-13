@@ -8,6 +8,7 @@ import img4 from "../../assets/journal000.jpeg";
 import img6 from "../../assets/xo.jpeg";
 import img7 from "../../assets/avoStore.png";
 import img8 from "../../assets/lemonFlow.png";
+import img9 from "../../assets/my-brand-landing-page.png";
 import "../styles/Projects.css";
 
 const Projects = () => {
@@ -27,13 +28,13 @@ const Projects = () => {
           urlRepo="https://github.com/mendoza000/rain000"
         />
 
-        <Project
+        {/* <Project
           img={img2}
           title="Juego web de piedra, papel y tijeras"
           skill="HTML - CSS - JS - WEBPACK"
           urlWeb="https://ppt000.netlify.app/"
           urlRepo="https://github.com/mendoza000/ppt"
-        />
+        /> */}
 
         {/*<Project 
 					img={img3}
@@ -81,6 +82,14 @@ const Projects = () => {
           skill="VUE3 - PINIA - TAILWIND - VITE - JS"
           urlWeb="https://lemon-flow.vercel.app/"
           urlRepo="https://github.com/mendoza000/lemon-flow"
+        />
+
+        <Project
+          img={img9}
+          title="Landing page"
+          skill="VUE3 - TAILWIND - VITE - JS"
+          urlWeb="https://mybrand000.vercel.app/"
+          urlRepo="https://github.com/mendoza000/my-brand-landing-page"
         />
       </div>
     </div>

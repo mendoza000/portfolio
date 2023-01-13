@@ -31,11 +31,13 @@ const Header = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "Desarrollador web!",
-        "Desarrollador Frontend!",
-        "Desarrollador Backend!",
-        "Autodidacta!",
-        "Amante de la tecnologia!",
+        "Y soy Desarrollador de software!",
+        "Y soy Desarrollador Web!",
+        "Y soy Desarrollador Frontend!",
+        "Y soy Desarrollador Backend!",
+        "Y soy Autodidacta!",
+        "Y soy Amante de la tecnologia!",
+        "Y soy Venezolano!",
       ],
       typeSpeed: 70,
       backSpeed: 70,
@@ -91,7 +93,10 @@ const Header = () => {
 
   return (
     <header className="header" ref={header}>
-      <h1 className="header_title">Omar Mendoza</h1>
+      <h1 className="header_title">
+        Hola! mi nombre es{" "}
+        <span className="header_title-name">Omar Mendoza</span>
+      </h1>
       <p className="header_autoTyped">
         \{">"}
         <span ref={textSpan}></span>
