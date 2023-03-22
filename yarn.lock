@@ -259,6 +259,11 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     "to-fast-properties" "^2.0.0"
 
+"@esbuild/win32-x64@0.17.12":
+  "integrity" "sha512-JOOxw49BVZx2/5tW3FqkdjSD/5gXYeVGPDcB0lvap0gLQshkh1Nyel1QazC+wNxus3xPlsYAgqU1BUmrmCvWtw=="
+  "resolved" "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.17.12.tgz"
+  "version" "0.17.12"
+
 "@rollup/pluginutils@^4.1.1":
   "integrity" "sha512-clDjivHqWGXi7u+0d2r2sBi4Ie6VLEAzWMIkvJLnDmxoOhBYOTfzGbOQBA32THHm11/LiJbd01tJUpJsbshSWQ=="
   "resolved" "https://registry.npmjs.org/@rollup/pluginutils/-/pluginutils-4.1.1.tgz"
@@ -420,33 +425,61 @@
   "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.889.tgz"
   "version" "1.3.889"
 
-"esbuild-windows-64@0.13.12":
-  "integrity" "sha512-k4tX4uJlSbSkfs78W5d9+I9gpd+7N95W7H2bgOMFPsYREVJs31+Q2gLLHlsnlY95zBoPQMIzHooUIsixQIBjaQ=="
-  "resolved" "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.13.12.tgz"
-  "version" "0.13.12"
+"esbuild-windows-64@0.13.15":
+  "integrity" "sha512-9aMsPRGDWCd3bGjUIKG/ZOJPKsiztlxl/Q3C1XDswO6eNX/Jtwu4M+jb6YDH9hRSUflQWX0XKAfWzgy5Wk54JQ=="
+  "resolved" "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.13.15.tgz"
+  "version" "0.13.15"
 
 "esbuild@^0.13.2":
-  "integrity" "sha512-vTKKUt+yoz61U/BbrnmlG9XIjwpdIxmHB8DlPR0AAW6OdS+nBQBci6LUHU2q9WbBobMEIQxxDpKbkmOGYvxsow=="
-  "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.13.12.tgz"
-  "version" "0.13.12"
+  "integrity" "sha512-raCxt02HBKv8RJxE8vkTSCXGIyKHdEdGfUmiYb8wnabnaEmHzyW7DCHb5tEN0xU8ryqg5xw54mcwnYkC4x3AIw=="
+  "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.13.15.tgz"
+  "version" "0.13.15"
   optionalDependencies:
-    "esbuild-android-arm64" "0.13.12"
-    "esbuild-darwin-64" "0.13.12"
-    "esbuild-darwin-arm64" "0.13.12"
-    "esbuild-freebsd-64" "0.13.12"
-    "esbuild-freebsd-arm64" "0.13.12"
-    "esbuild-linux-32" "0.13.12"
-    "esbuild-linux-64" "0.13.12"
-    "esbuild-linux-arm" "0.13.12"
-    "esbuild-linux-arm64" "0.13.12"
-    "esbuild-linux-mips64le" "0.13.12"
-    "esbuild-linux-ppc64le" "0.13.12"
-    "esbuild-netbsd-64" "0.13.12"
-    "esbuild-openbsd-64" "0.13.12"
-    "esbuild-sunos-64" "0.13.12"
-    "esbuild-windows-32" "0.13.12"
-    "esbuild-windows-64" "0.13.12"
-    "esbuild-windows-arm64" "0.13.12"
+    "esbuild-android-arm64" "0.13.15"
+    "esbuild-darwin-64" "0.13.15"
+    "esbuild-darwin-arm64" "0.13.15"
+    "esbuild-freebsd-64" "0.13.15"
+    "esbuild-freebsd-arm64" "0.13.15"
+    "esbuild-linux-32" "0.13.15"
+    "esbuild-linux-64" "0.13.15"
+    "esbuild-linux-arm" "0.13.15"
+    "esbuild-linux-arm64" "0.13.15"
+    "esbuild-linux-mips64le" "0.13.15"
+    "esbuild-linux-ppc64le" "0.13.15"
+    "esbuild-netbsd-64" "0.13.15"
+    "esbuild-openbsd-64" "0.13.15"
+    "esbuild-sunos-64" "0.13.15"
+    "esbuild-windows-32" "0.13.15"
+    "esbuild-windows-64" "0.13.15"
+    "esbuild-windows-arm64" "0.13.15"
+
+"esbuild@^0.17.12":
+  "integrity" "sha512-bX/zHl7Gn2CpQwcMtRogTTBf9l1nl+H6R8nUbjk+RuKqAE3+8FDulLA+pHvX7aA7Xe07Iwa+CWvy9I8Y2qqPKQ=="
+  "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.17.12.tgz"
+  "version" "0.17.12"
+  optionalDependencies:
+    "@esbuild/android-arm" "0.17.12"
+    "@esbuild/android-arm64" "0.17.12"
+    "@esbuild/android-x64" "0.17.12"
+    "@esbuild/darwin-arm64" "0.17.12"
+    "@esbuild/darwin-x64" "0.17.12"
+    "@esbuild/freebsd-arm64" "0.17.12"
+    "@esbuild/freebsd-x64" "0.17.12"
+    "@esbuild/linux-arm" "0.17.12"
+    "@esbuild/linux-arm64" "0.17.12"
+    "@esbuild/linux-ia32" "0.17.12"
+    "@esbuild/linux-loong64" "0.17.12"
+    "@esbuild/linux-mips64el" "0.17.12"
+    "@esbuild/linux-ppc64" "0.17.12"
+    "@esbuild/linux-riscv64" "0.17.12"
+    "@esbuild/linux-s390x" "0.17.12"
+    "@esbuild/linux-x64" "0.17.12"
+    "@esbuild/netbsd-x64" "0.17.12"
+    "@esbuild/openbsd-x64" "0.17.12"
+    "@esbuild/sunos-x64" "0.17.12"
+    "@esbuild/win32-arm64" "0.17.12"
+    "@esbuild/win32-ia32" "0.17.12"
+    "@esbuild/win32-x64" "0.17.12"
 
 "escalade@^3.1.1":
   "integrity" "sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw=="
@@ -814,10 +847,10 @@
   "resolved" "https://registry.npmjs.org/typed.js/-/typed.js-2.0.12.tgz"
   "version" "2.0.12"
 
-"typescript@^4.8.4":
-  "integrity" "sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ=="
-  "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.8.4.tgz"
-  "version" "4.8.4"
+"typescript@^4.9.5":
+  "integrity" "sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g=="
+  "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz"
+  "version" "4.9.5"
 
 "value-equal@^1.0.1":
   "integrity" "sha512-NOJ6JZCAWr0zlxZt+xqCHNTEKOsrks2HQd4MqhP1qy4z1SkbEP467eNx6TgDKXMvUOb+OENfJCZwM+16n7fRfw=="

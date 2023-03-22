@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "boxicons": "^2.0.9",
+    "esbuild": "^0.17.12",
     "gsap": "^3.8.0",
     "normalize.css": "^8.0.1",
     "react": "^17.0.0",
@@ -19,7 +20,7 @@
     "@types/node": "^18.7.23",
     "@types/react": "^18.0.21",
     "@vitejs/plugin-react": "^1.0.0",
-    "typescript": "^4.8.4",
+    "typescript": "^4.9.5",
     "vite": "^2.6.4"
   }
 }
