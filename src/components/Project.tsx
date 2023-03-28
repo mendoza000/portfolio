@@ -1,79 +1,85 @@
-import React, {useRef, useEffect} from 'react'
+import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import { PixiPlugin } from "gsap/PixiPlugin.js";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
+import { useConfigStore } from "../store/config";
+import { shallow } from "zustand/shallow";
+import { langText } from "../data/langText";
 
-const Project = ({img, title, text, skill, urlWeb, urlRepo, infoText}) => {
-	
-	const hover = useRef()
-	const titleP = useRef()
-	const line = useRef()
-	const skillP = useRef()
-	const btn1 = useRef()
-	const btn2 = useRef()
-	const info = useRef()
-	const card = useRef()
-	const image = useRef()
+interface Props {
+	img: string;
+	title: string;
+	skill: string;
+	urlWeb: string;
+	urlRepo: string;
+}
+
+const Project = ({ img, title, skill, urlWeb, urlRepo }: Props) => {
+	const { lang } = useConfigStore((state) => state, shallow);
+
+	const hover = useRef<any>();
+	const titleP = useRef<any>();
+	const line = useRef<any>();
+	const skillP = useRef<any>();
+	const btn1 = useRef<any>();
+	const btn2 = useRef<any>();
+	const info = useRef<any>();
+	const card = useRef<any>();
+	const image = useRef<any>();
 
 	useEffect(() => {
-
 		gsap.to(hover.current, {
-			opacity: 0
-		})
+			opacity: 0,
+		});
 		gsap.to(titleP.current, {
 			y: -50,
-		})
+		});
 		gsap.to(line.current, {
 			y: -50,
-		})
+		});
 		gsap.to(skillP.current, {
 			y: 50,
-		})
+		});
 		gsap.to(btn1.current, {
 			x: -150,
-		})
+		});
 		gsap.to(btn2.current, {
 			x: 150,
-		})
+		});
 		gsap.to(info.current, {
 			opacity: 0,
 			zIndex: -1,
-			display: 'none'
-		})
+			display: "none",
+		});
 		gsap.to(card.current, {
-			minHeight: '16rem',
-			maxHeight: '16rem',
-		})
-
-
-	},[])
+			minHeight: "16rem",
+			maxHeight: "16rem",
+		});
+	}, []);
 
 	const viewHover = () => {
-
 		gsap.to(hover.current, {
 			opacity: 1,
-			duration: 0.5
-		})
+			duration: 0.5,
+		});
 		gsap.to(titleP.current, {
 			y: 0,
-			duration: 0.7
-		})
+			duration: 0.7,
+		});
 		gsap.to(line.current, {
 			y: 0,
-			duration: 0.6
-		})
+			duration: 0.6,
+		});
 		gsap.to(skillP.current, {
 			y: 0,
-			duration: 0.7
-		})
+			duration: 0.7,
+		});
 		gsap.to(btn1.current, {
 			x: 0,
-			duration: 0.7
-		})
+			duration: 0.7,
+		});
 		gsap.to(btn2.current, {
 			x: 0,
-			duration: 0.7
-		})
+			duration: 0.7,
+		});
 
 		// gsap.to(info.current, {
 		// 	opacity: 1,
@@ -89,34 +95,32 @@ const Project = ({img, title, text, skill, urlWeb, urlRepo, infoText}) => {
 		// gsap.to(image.current, {
 		// 	height: '18rem'
 		// })
-
-	}
+	};
 	const noViewHover = () => {
-
 		gsap.to(hover.current, {
 			opacity: 0,
-			duration: 0.5
-		})
+			duration: 0.5,
+		});
 		gsap.to(titleP.current, {
 			y: -50,
-			duration: 0.7
-		})
+			duration: 0.7,
+		});
 		gsap.to(line.current, {
 			y: -50,
-			duration: 0.6
-		})
+			duration: 0.6,
+		});
 		gsap.to(skillP.current, {
 			y: 50,
-			duration: 0.7
-		})
+			duration: 0.7,
+		});
 		gsap.to(btn1.current, {
 			x: -150,
-			duration: 0.7
-		})
+			duration: 0.7,
+		});
 		gsap.to(btn2.current, {
 			x: 150,
-			duration: 0.7
-		})
+			duration: 0.7,
+		});
 
 		// gsap.to(info.current, {
 		// 	opacity: 0,
@@ -127,18 +131,14 @@ const Project = ({img, title, text, skill, urlWeb, urlRepo, infoText}) => {
 		// 	minHeight: '16rem',
 		// 	maxHeight: '16rem',
 		// })
+	};
 
-	}
+	return (
+		<div className="projects_card" ref={card}>
+			<img src={img} alt="img project" ref={image} />
 
-	return(
-		<div 
-			className="projects_card" 
-			ref={card}
-		>
-			<img src={img} alt="img project" ref={image}/>
-			
-			<div 
-				className="hover" 
+			<div
+				className="hover"
 				ref={hover}
 				onMouseEnter={viewHover}
 				onMouseLeave={noViewHover}
@@ -152,22 +152,27 @@ const Project = ({img, title, text, skill, urlWeb, urlRepo, infoText}) => {
 				</p>
 
 				<div className="project_card_btnContainer">
-					
-					<a 
+					<a
 						className="project_card_btn"
 						href={urlWeb}
-						target='_blank'
-						ref={btn1}>
-						<box-icon name='rocket'></box-icon>
-						Ver pagina
+						target="_blank"
+						ref={btn1}
+					>
+						<box-icon name="rocket"></box-icon>
+						{lang === "es"
+							? langText.projectButtons.es[0]
+							: langText.projectButtons.en[0]}
 					</a>
 					<a
 						className="project_card_btn"
 						href={urlRepo}
-						target='_blank' 
-						ref={btn2}>
-						<box-icon name='planet'></box-icon>
-						Ver Github
+						target="_blank"
+						ref={btn2}
+					>
+						<box-icon name="planet"></box-icon>
+						{lang === "es"
+							? langText.projectButtons.es[1]
+							: langText.projectButtons.en[1]}
 					</a>
 				</div>
 			</div>
@@ -176,13 +181,10 @@ const Project = ({img, title, text, skill, urlWeb, urlRepo, infoText}) => {
 				<span className="project_info-title">
 					<box-icon name="party"></box-icon>
 					INFORMACIÓN
-				</span>	
-				{infoText}
+				</span>
 			</p>
-
 		</div>
-	)
+	);
+};
 
-}
-
-export default Project
+export default Project;

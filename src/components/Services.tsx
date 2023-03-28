@@ -1,61 +1,78 @@
-import React from 'react'
-import '../styles/Services.css'
+import React from "react";
+import { shallow } from "zustand/shallow";
+import { langText } from "../data/langText";
+import { useConfigStore } from "../store/config";
+import "../styles/Services.css";
 
 const Services = () => {
-	
-	return(
+	const { lang } = useConfigStore((state) => state, shallow);
+
+	return (
 		<div className="services mx" id="services">
 			<h3 className="services_title">
-				<box-icon name='crown' color="#1d915f"></box-icon>
-				Servicios
+				<box-icon name="crown" color="#1d915f"></box-icon>
+				{lang === "es" ? langText.servicesTitle.es : langText.servicesTitle.en}
 			</h3>
 
 			<div className="services_list">
-				
 				<div className="services_card">
-					<box-icon name='code-alt' size="cssSize"></box-icon>
+					<box-icon name="code-alt" size="cssSize"></box-icon>
 					<p className="services_card_title">
-						Desarrollo Web
+						{lang === "es"
+							? langText.servicesTitles.es[0]
+							: langText.servicesTitles.en[0]}
 					</p>
 					<p className="services_card_text">
-						Trabajo con mis clientes en desarrollar un sitio web que cubra todas sus necesidades y las de su negocio, porque sabemos que el futuro esta en la web y en su portabilidad.
+						{lang === "es"
+							? langText.servicesTexts.es[0]
+							: langText.servicesTexts.en[0]}
 					</p>
 				</div>
 
 				<div className="services_card">
-					<box-icon name='trim' size="cssSize"></box-icon>
+					<box-icon name="trim" size="cssSize"></box-icon>
 					<p className="services_card_title">
-						Diseño responsive
+						{lang === "es"
+							? langText.servicesTitles.es[1]
+							: langText.servicesTitles.en[1]}
 					</p>
 					<p className="services_card_text">
-						Las paginas web, no se visualizan de la misma forma en un dispositivo móvil que desde una computadora. Sin embargo puedo hacer que su sitio web se ve bien en todos lados.
+						{lang === "es"
+							? langText.servicesTexts.es[1]
+							: langText.servicesTexts.en[1]}
 					</p>
 				</div>
 
 				<div className="services_card">
-					<box-icon name='palette' size="cssSize"></box-icon>
+					<box-icon name="palette" size="cssSize"></box-icon>
 					<p className="services_card_title">
-						Adaptabilidad de diseño
+						{lang === "es"
+							? langText.servicesTitles.es[2]
+							: langText.servicesTitles.en[2]}
 					</p>
 					<p className="services_card_text">
-						Me especializo en crear diseños desde cero, y tambien puedo trabajar en diseños que mis clientes ya posean, que nos permita tener una colaboración de gran valor en el resultado final.
+						{lang === "es"
+							? langText.servicesTexts.es[2]
+							: langText.servicesTexts.en[2]}
 					</p>
 				</div>
 
 				<div className="services_card">
-					<box-icon name='mobile-alt' size="cssSize"></box-icon>
+					<box-icon name="mobile-alt" size="cssSize"></box-icon>
 					<p className="services_card_title">
-						Mobile First
+						{lang === "es"
+							? langText.servicesTitles.es[3]
+							: langText.servicesTitles.en[3]}
 					</p>
 					<p className="services_card_text">
-						Esta es una estrategia de diseño de interfaces donde se empieza con el desarrollo para pantallas pequeñas, porque sabemos que usamos mas un SmartPhone que una laptop y tener la mejor experiencia ahí es mi misión.
+						{lang === "es"
+							? langText.servicesTexts.es[3]
+							: langText.servicesTexts.en[3]}
 					</p>
 				</div>
-
 			</div>
 		</div>
-	)
+	);
+};
 
-}
-
-export default Services
+export default Services;

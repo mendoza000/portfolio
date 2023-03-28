@@ -1,31 +1,35 @@
 import React from "react";
+import { shallow } from "zustand/shallow";
+import { langText } from "../data/langText";
+import { useConfigStore } from "../store/config";
 import "../styles/AboutMe.css";
 import Redes from "./about/Redes";
 
 const AboutMe = () => {
+	const { lang } = useConfigStore((state) => state, shallow);
+
 	return (
 		<div className="about mx" id="about">
 			<div className="about_col">
-				<h3 className="about_title">¿Quién soy yo?</h3>
+				<h3 className="about_title">
+					{lang === "es" ? langText.aboutTitle.es : langText.aboutTitle.en}
+				</h3>
 
 				<p className="about_text">
-					Hola ✌. Me llamo Omar Mendoza, y soy un joven muy apasionado por la
-					tecnología, principalmente en el desarrollo de aplicaciones y
-					servicios web. Me puedo adaptar a los cambios que se presenten, y al
-					mismo tiempo estoy muy abierto al aprendizaje continuo, acepto grandes
-					retos y desafios que me permitan mejorar cada día. Actualmente estoy
-					desarrollando mis habilidades de forma autodidacta.
+					{lang === "es" ? langText.aboutText.es : langText.aboutText.en}
 				</p>
 			</div>
 
 			<div className="about_col">
 				<p>
 					<box-icon name="pin" color="#1d915f"></box-icon>
-					Disponibilidad para Freelancer
+					{lang === "es" ? langText.aboutStatus.es : langText.aboutStatus.en}
 				</p>
 				<p>
 					<box-icon name="pin" color="#1d915f"></box-icon>
-					Ubicado en Venezuela
+					{lang === "es"
+						? langText.aboutUbication.es
+						: langText.aboutUbication.en}
 				</p>
 				<Redes />
 			</div>
