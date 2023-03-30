@@ -82,6 +82,17 @@ const Projects = () => {
 					urlWeb="https://mybrand000.vercel.app/"
 					urlRepo="https://github.com/mendoza000/my-brand-landing-page"
 				/>
+				<Project
+					img={"your-app-landing.png"}
+					title={
+						lang === "es"
+							? langText.projectsNames.es[6]
+							: langText.projectsNames.en[6]
+					}
+					skill="VUE3 - TAILWIND - VITE - JS"
+					urlWeb="https://your-app-landing.vercel.app/"
+					urlRepo="https://github.com/mendoza000/your-app-landing"
+				/>
 			</div>
 		</div>
 	);

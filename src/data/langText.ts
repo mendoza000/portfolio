@@ -105,8 +105,8 @@ export const langText = {
     en: ["View page", "View Github"]
   },
   projectsNames: {
-    es: ["Aplicacion web del clima", "Apliacion web de notas", "Juego de ceros y cruces", "Tienda virtual de aguacates", "Registro de ingresos y gastos", "Landing page"],
-    en: ["Weather web app", "Notes web app", "Tic Tac Toe game", "Virtual avocado store", "Income and expense tracker", "Landing page"]
+    es: ["Aplicacion web del clima", "Apliacion web de notas", "Juego de ceros y cruces", "Tienda virtual de aguacates", "Registro de ingresos y gastos", "Landing page", "Landing page para apliación"],
+    en: ["Weather web app", "Notes web app", "Tic Tac Toe game", "Virtual avocado store", "Income and expense tracker", "Landing page", "Landing page for application"]
   },
   footerTitle: {
     es: "¿Te gusta mi trabajo?",
