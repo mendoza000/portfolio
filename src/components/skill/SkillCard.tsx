@@ -2,13 +2,13 @@ import React from "react";
 
 interface Props {
 	name: string;
-	xpath: string;
+	icon: any;
 }
 
-const SkillCard = ({ name, xpath }: Props) => {
+const SkillCard = ({ name, icon }: Props) => {
 	return (
 		<div className="skills_card">
-			<img src={`/${xpath}.svg`} alt={name} />
+			{icon}
 			<p>{name}</p>
 		</div>
 	);

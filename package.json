@@ -7,6 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@react-symbols/icons": "^1.2.2",
     "boxicons": "^2.0.9",
     "esbuild": "^0.17.12",
     "gsap": "^3.8.0",
